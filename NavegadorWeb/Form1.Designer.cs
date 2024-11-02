@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnAdelante = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -45,6 +46,7 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(1009, 482);
             this.webBrowser1.TabIndex = 0;
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // txtUrl
             // 
@@ -104,6 +106,11 @@
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.button2_Click);
             // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,6 +141,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAdelante;
         private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
     }
 }
 

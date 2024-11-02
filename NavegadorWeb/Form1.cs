@@ -14,8 +14,8 @@ namespace NavegadorWed
     {
         public Form1()
         {
-            InitializeComponent();
-            webBrowser1.ScriptErrorsSuppressed = true; // Desactiva los errores de script
+            //InitializeComponent();
+            //webBrowser1.ScriptErrorsSuppressed = true; // Desactiva los errores de script
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,6 +68,11 @@ namespace NavegadorWed
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
 
         }
